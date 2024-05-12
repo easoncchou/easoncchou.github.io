@@ -3,34 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Eason's Portfolio </title>
+    <title> Eason's Personal Website </title>
     <link rel="icon" type="image/x-icon" href="/assets/planet.png">
 </head>
 
 <body>
 <!-- header with heading/title and subtitle -->
 <header id="top">
-    <h1> Eason C.'s Portfolio </h1>
-    <h3> Hello! Welcome to my portfolio where I show off some things I've done and tell you a bit about myself! </h2>
-    <h3>  </h3>
+    <h1> Eason's Portfolio </h1>
+    <h3> Welcome to my portfolio where I show off some of the things I've done and tell you about myself! </h2>
 </header>
+
 <hr>
+
 <!-- table of contnts using the nav semantic tag -->
 <nav id="table_of_contents">
-    <h3> Table of Contents </h3>
+    <h2> Table of Contents </h2>
     <a href="#about_me"> About Me </a> <br>
     <a href="#my_projects"> My Projects </a> <br>
     <a href="#skills_and_experiences"> Skills &amp; Experiences </a> <br>
-    <a href="#my_hobbies"> Hobbies &amp; Interests </a> <br>
+    <a href="#hobbies_and_interests"> Hobbies &amp; Interests </a> <br>
+    <br>
 </nav>
 
-<section id="about_me">
+<hr>
 
+<section id="about_me">
+    <h2> About Me </h2>
+    Hello! I'm Eason Chou, a third year Computer Engineering student at the University of Toronto. I enjoy coding and making projects, especially when I can see the fruits of my labour! I've currently taken a keen interest in front-end development, but I'm also fascinated by embedded systems, machine learning, and computer science/engineering in general. I have other interests which you can read about in my Hobbies &amp; Interests section.
+
+    <h3> Fun Facts </h3>
+    <ul>
+        <li> I've made the Dean's Honour List four semesters in a row and counting! (CGPA: 3.67, ~82% average) </li>
+        <li> I was also a bronze medalist in the B.C. Provincial Badminton Championships </li>
+    </ul>
 </section>
+
+<hr>
 
 <section id="my_projects">
     <h2> My Projects </h2>
-    <p> I love to make things using what I've learned; Please take a look! </p>
+    <p> I love to make things using the skills I've learned. Please take a look! </p>
 
     <section id="rhythm_game">
         A Rhythm Game similar to <a href="https://en.wikipedia.org/wiki/Piano_Tiles"> Piano Tiles </a> made in the <strong> C </strong> language for the DE1-SoC Board.
@@ -41,42 +54,48 @@
     </section>
 
     <section id="stuGIS">
-        A GIS desktop app designed to <em> make student life easier </em>, coded in <strong> C++ </strong> for the <strong> Linux </strong> system.
+        A GIS desktop app designed to <em> make student life easier</em>, coded in <strong> C++ </strong> for the <strong> Linux </strong> system.
         <ul> 
             <li> <a href="https://github.com/JamesTheZhang/ECE297"> GitHub Link </a> </li>
         </ul>
+        <figure>
+            <img src="assets/stuGIS.png" alt="A screenshot of the stuGIS interface" style="width:703px;height:378px;">
+            <figcaption> A screenshot of the stuGIS interface. </figcaption>
+        </figure>
     </section>
 </section>
+
+<hr>
 
 <section id="skills_and_experiences"> 
     <h2> Skills &amp; Experiences </h2>
     <section id="skills">
         <h3> Technical Skills: </h3>
         <ul> 
-            <li> Programming Languages: C/C++, Python, HTML/CSS, JavaScript, Verilog, Matlab/Simulink </li>
-            <li> Technologies: PyTorch, GTK/Glade </li>
-            <li> Version Control: Git, GitHub </li>
-            <li> Algorithms: Minimax, A*/Djikstra's, Traveling Salesman Problem </li>
+            <li> <strong>Programming Languages:</strong> C/C++, Python, HTML/CSS, JavaScript, Verilog, Matlab/Simulink </li>
+            <li> <strong>Technologies:</strong> PyTorch, GTK/Glade </li>
+            <li> <strong>Version Control:</strong> Git, GitHub </li>
+            <li> <strong>Algorithms:</strong> Minimax, A*/Djikstra's, Traveling Salesman Problem </li>
         </ul>
         <h3> Soft Skills: </h3>
         <ul>
             <li>
-                Communication Skills
+                <strong>Communication Skills</strong>
                 <ul>
                     <li> Clear and concise verbal communication to explain complex concepts in a straightforward manner </li>
                     <li> Ability to adapt explanations to the audience's level of understanding, ensuring comprehension </li>
                     <li> Proficient in using visual aids and analogies to enhance explanations and engage listeners </li>
                 </ul>
             </li>
-            <li> Leadership &amp; Teamwork </li>
-            <li> Conflict Resolution </li>
+            <li> <strong>Leadership &amp; Teamwork:</strong> adaptive to a variety of roles and team sizes </li>
+            <li> <strong>Conflict Resolution:</strong> willing to accept constructive feedback and resolve differences in a civil manner </li>
         </ul>
     </section>
     <section id="experiences">
         <h3> Experiences: </h3>
         <ul> 
             <li> 
-                <abbr title="University of Toronto Robotics Association""> UTRA </abbr> <a href="https://www.utra.ca/teams/pacbot/"> PacBot </a> Algo Team Member
+                <strong><abbr title="University of Toronto Robotics Association""> UTRA </abbr> <a href="https://www.utra.ca/teams/pacbot/"> PacBot </a> Algo Team Member</strong>
                 <ul>
                     <li> Conducted research and wrote reports about game internals and potential strategies</li>
                     <li> Debugged A* pathfinding heuristics across large codebase </li>
@@ -84,14 +103,14 @@
                 </ul>
             </li>
             <li>
-                Tutor at <a href="https://www.drjennychan.com/"> Success For All Canada </a>, where I honed my communication skills by teaching mathematics, physics, coding to high-school students.
+                <strong>Tutor at <a href="https://www.drjennychan.com/"> Success For All Canada </a>, where I honed my communication skills by teaching mathematics, physics, coding to high-school students.</strong>
                 <ul>
                     <li> Used visual examples and analogies to clearly explain concepts </li>
                     <li> One-on-one teaching using probing questions to guide students </li>
                 </ul>
             </li>
             <li>
-                <abbr title="Steveston-London Secondary School""> SLSS </abbr> badminton team captain
+                <strong><abbr title="Steveston-London Secondary School""> SLSS </abbr> Badminton Team Captain</strong>
                 <ul>
                     <li> Coached team members to improve their techniques, mechanics, and strategies </li>
                     <li> Organized and led team practices </li>
@@ -101,7 +120,30 @@
     </section>
 </section>
 
-<footer> Last updated: May 11th 2024 </footer>
+<hr>
+
+<section id="hobbies_and_interests">
+    <h2> Hobbies &amp; Interests </h2>
+    <ul>
+        <li> I'm an avid badminton player who used to compete provincially. I've lead my school team to third place in the province and even won a few tournaments here and there. </li>
+        <figure>
+            <img src="assets/badminton.png" alt="Me and my partner Jason with our first-place medals" style="width:371px;height:495px;">
+            <figcaption> Me and my partner Jason; we won first place at a badminton tournament. </figcaption>
+        </figure>
+        <li> I enjoy working out weekly for both my physical and mental health. </li>
+        <li> I love martial arts! I've done Muay Thai, Boxing, and Sanda. </li>
+        <li> Music is one of the most important things in my life. I used to play clarinet in my school band and jazz club. I can also play a bit of guitar. I love many genres of music like Jpop, R&B, Jazz, and many more. </li>
+        <li> Eating delicious meals and enjoying desserts is what I live for, and I also like to cook when I have time! </li>
+        <figure>
+            <img src="assets/snoopy.png" alt="Snoopy cooking in a chef's outfit" style="width:433px;height:373px;">
+            <figcaption> I enjoy cooking, just like Snoopy. </figcaption>
+        </figure>
+    </ul>
+</section>
+
+<hr>
+
+<footer> Last updated: May 11th 2024. <a href="#top"> Back to top </a> </footer>
 
 </body>
 </html>
