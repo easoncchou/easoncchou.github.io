@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Eason's Personal Website </title>
+    <title> Eason's Portfolio Website </title>
+    <!-- set up favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/planet.png">
+    <!-- include our external stylesheet -->
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <!-- get google fonts (roboto) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <!-- header with heading/title and subtitle -->
 <header id="top">
     <h1> Eason's Portfolio </h1>
-    <h3> Welcome to my portfolio where I show off some of the things I've done and tell you about myself! </h3>
+    <h3 id="header_subtitle"> <a href="mailto:eason.chou@mail.utoronto.ca">email</a> | <a href="https://github.com/easoncchou">GitHub</a> | <a href="https://linkedin.com/in/easoncchou">LinkedIn</a> </h3>
 </header>
 
 <hr>
@@ -78,6 +83,8 @@
             <li> <strong>Algorithms:</strong> Minimax, A*/Djikstra's, Traveling Salesman Problem </li>
         </ul>
         <h3> Soft Skills: </h3>
+        <details>
+            <summary></summary>
         <ul>
             <li>
                 <strong>Communication Skills</strong>
@@ -90,6 +97,7 @@
             <li> <strong>Leadership &amp; Teamwork:</strong> adaptive to a variety of roles and team sizes </li>
             <li> <strong>Conflict Resolution:</strong> willing to accept constructive feedback and resolve differences in a civil manner </li>
         </ul>
+        </details>
     </section>
     <section id="experiences">
         <h3> Experiences: </h3>
@@ -130,24 +138,20 @@
         <li> I love martial arts! I've done Muay Thai, Boxing, and Sanda. </li>
         <li> Music is one of the most important things in my life. I used to play clarinet in my school band and jazz club. I can also play a bit of guitar. I love many genres of music like Jpop, R&B, Jazz, and many more. </li>
         <li> Eating delicious meals and enjoying desserts is what I live for, and I also like to cook when I have time! </li>
-        <li>
-            <figure>
-                <img src="assets/snoopy.png" alt="Snoopy cooking in a chef's outfit" style="width:433px;height:373px;">
-                <figcaption> I enjoy cooking, just like Snoopy. </figcaption>
-            </figure>
-        </li>
-        <li> 
-            <figure>
-                <img src="assets/xiaohei1.png" alt="Xiaohei the mutt smiling at the camera" style="width:328px;height:438px;">
-                <figcaption> This section is dedicated to Xiaohei, my grandma's awesome dog. </figcaption>
-            </figure>
-        </li>
     </ul>
+        <figure>
+            <img src="assets/snoopy.png" alt="Snoopy cooking in a chef's outfit" style="width:433px;height:373px;">
+            <figcaption> I enjoy cooking, just like Snoopy. </figcaption>
+        </figure>
+        <figure>
+            <img src="assets/xiaohei1.png" alt="Xiaohei the mutt smiling at the camera" style="width:328px;height:438px;">
+            <figcaption> This section is dedicated to Xiaohei, my grandma's awesome dog. </figcaption>
+        </figure>
 </section>
 
 <hr>
 
-<footer> Last updated: May 11th 2024. <a href="#top"> Back to top </a> </footer>
+<footer> Last updated: May 11th 2024. <a id="back_to_top" href="#top"> Back to top </a> </footer>
 
 </body>
 </html>

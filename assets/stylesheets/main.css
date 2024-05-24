@@ -1,0 +1,42 @@
+/* first, change the background color */
+body { /* top layer */
+    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* color palette: https://www.color-hex.com/color-palette/13403 
+	Astronomy:  #cfedfd	(207,237,253)
+                #bfe6fb	(191,230,251)
+                #81b1c9	(129,177,201)
+                #55859f	(85,133,159)
+                #115376	(17,83,118)
+    Violet:     	#ffffff	(255,255,255)
+                    #e5d0ff	(229,208,255)
+                    #dabcff	(218,188,255)
+                    #cca3ff	(204,163,255)
+                    #bf8bff	(191,139,255)
+*/
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: lighter;
+}
+
+#header_subtitle {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#back_to_top {
+    color: #000;
+    text-decoration: dashed;
+}
+
+figure {
+    display: inline-block;
+}
