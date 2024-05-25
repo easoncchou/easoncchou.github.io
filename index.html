@@ -5,153 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Eason's Portfolio Website </title>
     <!-- set up favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/planet.png">
-    <!-- include our external stylesheet -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/planet.png">
+    <!-- include our external stylesheets -->
+    <link rel="stylesheet" href="assets/stylesheets/reset.css">
     <link rel="stylesheet" href="assets/stylesheets/main.css">
     <!-- get google fonts (roboto) -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<!-- header with heading/title and subtitle -->
-<header id="top">
-    <h1> Eason's Portfolio </h1>
-    <h3 id="header_subtitle"> <a href="mailto:eason.chou@mail.utoronto.ca">email</a> | <a href="https://github.com/easoncchou">GitHub</a> | <a href="https://linkedin.com/in/easoncchou">LinkedIn</a> </h3>
-</header>
-
-<hr>
-
-<!-- table of contnts using the nav semantic tag -->
+<!-- accessibility skipper -->
+<a href="#main-content" class="skip-link">Skip to main content</a>  
+<!-- navigation using the nav semantic tag -->
 <nav id="table_of_contents">
-    <h2> Table of Contents </h2>
-    <a href="#about_me"> About Me </a> <br>
-    <a href="#my_projects"> My Projects </a> <br>
-    <a href="#skills_and_experiences"> Skills &amp; Experiences </a> <br>
-    <a href="#hobbies_and_interests"> Hobbies &amp; Interests </a> <br>
-    <br>
+    <img src="assets/images/ufo-sprite.png" alt="river-sprite in a ufo"> 
+    <a class="current" href="index.html"> About Me </a>
+    <a href="projects.html"> My Projects </a>
+    <a href="resume.html"> Skills &amp; Experiences </a>
+    <a href="hobbies.html"> Hobbies &amp; Interests </a>
 </nav>
 
-<hr>
+<header id="top">
+    <h1> Eason's Portfolio </h1>
+    <p> Third-Year Computer Engineering @ University of Toronto </p>
+    <p> 
+        <a href="mailto:eason.chou@mail.utoronto.ca" target="_blank"><img id="mail-logo" src="assets/images/mail.png" alt="mail logo"></a>
+        <a href="https://github.com/easoncchou" target="_blank"><img id="github-logo" src="assets/images/github.png" alt="github logo"></a>
+        <a href="https://linkedin.com/in/easoncchou/" target="_blank"><img id="linkedin-logo" src="assets/images/linkedin.png" alt="linkedin logo"></a> 
+    </p>
+</header>
+
+<main id="main-content">
+<!-- header with heading/title and subtitle -->
 
 <section id="about_me">
     <h2> About Me </h2>
-    Hello! I'm Eason Chou, a third year Computer Engineering student at the University of Toronto. I enjoy coding and making projects, especially when I can see the fruits of my labour! I've currently taken a keen interest in front-end development, but I'm also fascinated by embedded systems, machine learning, and computer science/engineering in general. I have other interests which you can read about in my Hobbies &amp; Interests section.
-
-    <h3> Fun Facts </h3>
-    <ul>
-        <li> I've made the Dean's Honour List four semesters in a row and counting! (CGPA: 3.67, ~82% average) </li>
-        <li> I was also a bronze medalist in the B.C. Provincial Badminton Championships </li>
-    </ul>
+    <p> Hello! I'm Eason and I enjoy coding and making <a href="projects.html">projects</a> with friends! 
+        I've currently taken a keen interest in front-end development, but I'm also fascinated by embedded systems, machine learning, and computer science/engineering in general. 
+        It's satisfying to see my project come to life while doing web dev or embedded systems, but I also can't resist the intellectual challenge of applying math and theory to an advanced algorithm.
+        <br><br>
+        Right now, I want to explore my interests within the broad field of computer science/engineering and find out what I will enjoy diving into most. I'm hungry to learn more and improve my skills!
+        <br><br>
+        When I'm not working late into the night, I pursue my other passions you can read about in the <a href="hobbies.html"> hobbies &amp; interests</a> section. </p>
 </section>
+</main>
 
-<hr>
-
-<section id="my_projects">
-    <h2> My Projects </h2>
-    <p> I love to make things using the skills I've learned. Please take a look! </p>
-
-    <section id="rhythm_game">
-        A Rhythm Game similar to <a href="https://en.wikipedia.org/wiki/Piano_Tiles"> Piano Tiles </a> made in the <strong> C </strong> language for the DE1-SoC Board.
-        <ul> 
-            <li> <a href="https://youtu.be/g_SRKAhhgUU?si=3auN8qKLcAuTi8ca"> Video Demo </a> </li>
-            <li> <a href="https://github.com/easoncchou/rhythm_game"> GitHub Link </a> </li>
-        </ul>
-    </section>
-
-    <section id="stuGIS">
-        A GIS desktop app designed to <em> make student life easier</em>, coded in <strong> C++ </strong> for the <strong> Linux </strong> system.
-        <ul> 
-            <li> <a href="https://github.com/JamesTheZhang/ECE297"> GitHub Link </a> </li>
-        </ul>
-        <figure>
-            <img src="assets/stuGIS.png" alt="A screenshot of the stuGIS interface" style="width:703px;height:378px;">
-            <figcaption> A screenshot of the stuGIS interface. </figcaption>
-        </figure>
-    </section>
-</section>
-
-<hr>
-
-<section id="skills_and_experiences"> 
-    <h2> Skills &amp; Experiences </h2>
-    <section id="skills">
-        <h3> Technical Skills: </h3>
-        <ul> 
-            <li> <strong>Programming Languages:</strong> C/C++, Python, HTML/CSS, JavaScript, Verilog, Matlab/Simulink </li>
-            <li> <strong>Technologies:</strong> PyTorch, GTK/Glade </li>
-            <li> <strong>Version Control:</strong> Git, GitHub </li>
-            <li> <strong>Algorithms:</strong> Minimax, A*/Djikstra's, Traveling Salesman Problem </li>
-        </ul>
-        <h3> Soft Skills: </h3>
-        <details>
-            <summary></summary>
-        <ul>
-            <li>
-                <strong>Communication Skills</strong>
-                <ul>
-                    <li> Clear and concise verbal communication to explain complex concepts in a straightforward manner </li>
-                    <li> Ability to adapt explanations to the audience's level of understanding, ensuring comprehension </li>
-                    <li> Proficient in using visual aids and analogies to enhance explanations and engage listeners </li>
-                </ul>
-            </li>
-            <li> <strong>Leadership &amp; Teamwork:</strong> adaptive to a variety of roles and team sizes </li>
-            <li> <strong>Conflict Resolution:</strong> willing to accept constructive feedback and resolve differences in a civil manner </li>
-        </ul>
-        </details>
-    </section>
-    <section id="experiences">
-        <h3> Experiences: </h3>
-        <ul> 
-            <li> 
-                <strong><abbr title="University of Toronto Robotics Association"> UTRA </abbr> <a href="https://www.utra.ca/teams/pacbot/"> PacBot </a> Algo Team Member</strong>
-                <ul>
-                    <li> Conducted research and wrote reports about game internals and potential strategies</li>
-                    <li> Debugged A* pathfinding heuristics across large codebase </li>
-                    <li> Implemented and tested features for A* targeting </li>
-                </ul>
-            </li>
-            <li>
-                <strong>Tutor at <a href="https://www.drjennychan.com/">Success For All Canada</a>, where I honed my communication skills by teaching mathematics, physics, coding to high-school students.</strong>
-                <ul>
-                    <li> Used visual examples and analogies to clearly explain concepts </li>
-                    <li> One-on-one teaching using probing questions to guide students </li>
-                </ul>
-            </li>
-            <li>
-                <strong><abbr title="Steveston-London Secondary School"> SLSS </abbr> Badminton Team Captain</strong>
-                <ul>
-                    <li> Coached team members to improve their techniques, mechanics, and strategies </li>
-                    <li> Organized and led team practices </li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-</section>
-
-<hr>
-
-<section id="hobbies_and_interests">
-    <h2> Hobbies &amp; Interests </h2>
-    <ul>
-        <li> I'm an avid badminton player who used to compete provincially. I've lead my school team to third place in the province and even won a few tournaments here and there. </li>
-        <li> I enjoy working out weekly for both my physical and mental health. </li>
-        <li> I love martial arts! I've done Muay Thai, Boxing, and Sanda. </li>
-        <li> Music is one of the most important things in my life. I used to play clarinet in my school band and jazz club. I can also play a bit of guitar. I love many genres of music like Jpop, R&B, Jazz, and many more. </li>
-        <li> Eating delicious meals and enjoying desserts is what I live for, and I also like to cook when I have time! </li>
-    </ul>
-        <figure>
-            <img src="assets/snoopy.png" alt="Snoopy cooking in a chef's outfit" style="width:433px;height:373px;">
-            <figcaption> I enjoy cooking, just like Snoopy. </figcaption>
-        </figure>
-        <figure>
-            <img src="assets/xiaohei1.png" alt="Xiaohei the mutt smiling at the camera" style="width:328px;height:438px;">
-            <figcaption> This section is dedicated to Xiaohei, my grandma's awesome dog. </figcaption>
-        </figure>
-</section>
-
-<hr>
-
-<footer> Last updated: May 11th 2024. <a id="back_to_top" href="#top"> Back to top </a> </footer>
+<footer> Last updated: May 25th, 2024. <a id="back_to_top" href="#top"> Back to top </a> </footer>
 
 </body>
 </html>

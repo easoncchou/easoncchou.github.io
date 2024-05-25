@@ -6,12 +6,50 @@
     <title> My Projects </title>
     <!-- set up favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/planet.png">
-    <!-- include our external stylesheet -->
+    <!-- include our external stylesheets -->
+    <link rel="stylesheet" href="assets/stylesheets/reset.css">
     <link rel="stylesheet" href="assets/stylesheets/main.css">
     <!-- get google fonts (roboto) -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<!-- accessibility skipper -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<!-- navigation using the nav semantic tag -->
+<nav id="table_of_contents">
+    <img src="assets/images/ufo-sprite.png" alt="river-sprite in a ufo"> 
+    <a href="index.html"> About Me </a> <br>
+    <a class="current" href="projects.html"> My Projects </a> <br>
+    <a href="resume.html"> Skills &amp; Experiences </a> <br>
+    <a href="hobbies.html"> Hobbies &amp; Interests </a> <br>
+    <br>
+</nav>
+
+<main id="main-content">
+<section id="my_projects">
+    <h2> My Projects </h2>
+    <p> I love to make things using the skills I've learned. Please take a look! </p>
+
+    <section id="rhythm_game">
+        A Rhythm Game similar to <a href="https://en.wikipedia.org/wiki/Piano_Tiles"> Piano Tiles </a> made in the <strong> C </strong> language for the DE1-SoC Board.
+        <ul> 
+            <li> <a href="https://youtu.be/g_SRKAhhgUU?si=3auN8qKLcAuTi8ca"> Video Demo </a> </li>
+            <li> <a href="https://github.com/easoncchou/rhythm_game"> GitHub Link </a> </li>
+        </ul>
+    </section>
+
+    <section id="stuGIS">
+        A GIS desktop app designed to <em> make student life easier</em>, coded in <strong> C++ </strong> for the <strong> Linux </strong> system.
+        <ul> 
+            <li> <a href="https://github.com/JamesTheZhang/ECE297"> GitHub Link </a> </li>
+        </ul>
+        <figure>
+            <img src="assets/images/stuGIS.png" alt="A screenshot of the stuGIS interface" style="width:703px;height:378px;">
+            <figcaption> A screenshot of the stuGIS interface. </figcaption>
+        </figure>
+    </section>
+</section>   
+</main>
 
 </body>

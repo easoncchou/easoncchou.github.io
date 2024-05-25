@@ -1,7 +1,8 @@
 /* first, change the background color */
 body { /* top layer */
-    background-color: #f0f0f0;
+    background-color: #81b1c9;
     font-family: 'Roboto', sans-serif;
+    color: 	#343d46;
 }
 
 /* color palette: https://www.color-hex.com/color-palette/13403 
@@ -10,33 +11,148 @@ body { /* top layer */
                 #81b1c9	(129,177,201)
                 #55859f	(85,133,159)
                 #115376	(17,83,118)
-    Violet:     	#ffffff	(255,255,255)
-                    #e5d0ff	(229,208,255)
-                    #dabcff	(218,188,255)
-                    #cca3ff	(204,163,255)
-                    #bf8bff	(191,139,255)
+    Beautiful Blues:  	#011f4b	(1,31,75)
+                        #03396c	(3,57,108)
+                        #005b96	(0,91,150)
+                        #6497b1	(100,151,177)
+                        #b3cde0
+    Space-Gray Like:    #343d46	(52,61,70)
+                        #4f5b66	(79,91,102)
+                        #65737e	(101,115,126)
+                        #a7adba	(167,173,186)
+                        #c0c5ce
 */
+
+/* accessibility skipper */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 1000;
+}
+    .skip-link:focus {
+    top: 0;
+}
+
+/* nav styling */
+nav {
+    margin: 0px 0px 0px 0px;
+    padding: 2vh 0px;
+    display: flex;
+    justify-content: space-around;
+    align-content:center;
+    width: 100%;
+    background-color: 	#011f4b;
+}
+nav a {
+    /* border: 2px, solid, red; */
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5%;
+    margin-top: 2.8%;
+    width: max-content;
+    height: min-content;
+    color:#e0f0f0;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color .1s linear .1s;  
+}
+nav a:hover {
+    background-color: #115376;
+}
+nav a.current {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+nav img {
+    /* border: 2px, solid, red; */
+    height: 10vh;
+}
+
+/* header styling */
+header {
+    margin: 0px 0px 0px 0px;
+    padding: 3vh 3vw;
+    background-color: #cfedfd;
+}
+header h1 {
+    padding: 0vw 1vw;
+    margin: 1vw;
+    border-left: 4px solid #011f4b;
+    text-align: left;
+}
+header p:nth-child(2) {
+    padding: 0vh 1vw 1.5vh 1vw;
+    font-weight: 500;
+    font-size: 20px;
+}
+header p {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: left;
+    align-content: baseline;
+    width: 100%;
+}
+#mail-logo { 
+    margin: 0vh 1vw;
+    padding-top: 10%;
+    width: 4vw;
+}
+#github-logo {
+    margin: 0vh 1vw;
+    width: 4vw;
+}
+#linkedin-logo {
+    margin: 0vh 1vw;
+    width: 4vw;
+}
+
+/* section styling*/
+section {
+    margin: 18px 18px;
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #cfedfd;
+}
+section p {
+    margin: 10px;
+    line-height: 125%;
+    font-size: 18px;
+}
 
 h1 {
     text-align: center;
-    font-size: 40px;
+    font-weight:600;
+    font-size: 44px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: lighter;
-}
-
-#header_subtitle {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-#back_to_top {
-    color: #000;
-    text-decoration: dashed;
+h2 {
+    margin: 10px;
+    padding-top: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 140%;
 }
 
 figure {
     display: inline-block;
+}
+
+.starry-background {
+    background-image: url("../images/starry-sky.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* shrink with window */
+    width: 100%;
+    height: 100vh;
+}
+
+footer {
+    margin: 18px 18px;
+    padding: 10px;
 }
