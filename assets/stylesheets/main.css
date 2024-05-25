@@ -1,6 +1,11 @@
 /* first, change the background color */
 body { /* top layer */
     background-color: #81b1c9;
+    background-image: url("../images/starry-sky.png");
+    background-repeat: repeat;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-clip: content-box; /* Clip the background image to the content box */
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     color: 	#343d46;
 }
@@ -141,11 +146,13 @@ header p {
 
 /* section styling*/
 section {
-    margin: 12px 24px;
+    margin: 20px 20px;
     padding: 10px;
     border-style: none;
     border-radius: 10px;
     background-color: #cfedfd;
+    line-height: 125%;
+    font-size: 18px;
 }
 section p {
     margin: 10px;
@@ -174,13 +181,18 @@ figure {
 .starry-background {
     background-image: url("../images/starry-sky.png");
     background-repeat: no-repeat;
-    background-size: contain; /* shrink with window */
     background-size: cover; /* Resize the background image to cover the entire container */
     background-clip: content-box; /* Clip the background image to the content box */
     width: 100%;
 }
 
 footer {
-    margin: 18px 18px;
-    padding: 10px;
+    position: fixed; /* or position: absolute; */
+    bottom: 0;
+    margin: 0px 0px;
+    padding: 2px;
+    border-style: none;
+    background-color: #74a7c1;
+    line-height: 100%;
+    font-size: 16px;
 }
