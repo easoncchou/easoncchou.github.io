@@ -91,7 +91,7 @@ header p:nth-child(2) {
     font-size: 20px;
 }
 header p {
-    margin: 0px 0px 0px 0px;
+    margin: 15px 0px 0px 0px;
     padding: 0px 0px;
     display: flex;
     justify-content: left;
@@ -99,17 +99,44 @@ header p {
     width: 100%;
 }
 #mail-logo { 
-    margin: 0vh 1vw;
-    padding-top: 10%;
-    width: 4vw;
+    margin: 0vh 0.5vw;
+    padding-top: 8%;
+    width: 50px;
 }
 #github-logo {
-    margin: 0vh 1vw;
-    width: 4vw;
+    margin: 0vh 0.5vw;
+    padding-top: 2%;
+    width: 50px;
 }
 #linkedin-logo {
-    margin: 0vh 1vw;
-    width: 4vw;
+    margin: 0vh 0.5vw;
+    padding-top: 3%;
+    width: 50px;
+}
+#flex-container {
+    display: flex;
+}
+.contact-link {
+    display: flex;
+    width: min-content;
+    padding-right: 5px;
+    border: 2px, solid, #cfedfd;
+    transition: border background-color .1s linear .1s;
+    overflow: hidden;
+}
+.contact-link:hover {
+    border-color: #115376;
+    border-radius: 5%;
+    background-color: #b3cde0;
+}
+.contact-link-img {
+    margin: 0vw;
+}
+.contact-link-text {
+    display: inline-block;
+    align-self: center;
+    color:#343d46;
+    text-decoration: none;
 }
 
 /* section styling*/
