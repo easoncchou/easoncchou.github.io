@@ -53,7 +53,7 @@ nav {
     background-color: 	#011f4b;
 }
 nav a {
-    /* border: 2px, solid, red; */
+    /* border: 2px solid red; */
     display: inline-block;
     padding: 5px;
     border-radius: 5%;
@@ -74,7 +74,7 @@ nav a.current {
     text-underline-offset: 5px;
 }
 nav img {
-    /* border: 2px, solid, red; */
+    /* border: 2px solid red; */
     height: 10vh;
 }
 
@@ -118,14 +118,30 @@ header p {
     padding-top: 3%;
     width: 50px;
 }
+#de1-soc-img {
+    margin: 0vh 0vw;
+    padding-top: 3%;
+    width: 150px;
+}
+#swe-img {
+    margin: 0vh 1.2vw;
+    padding-top: 9%;
+    width: 90px;
+}
+#web-dev-img {
+    margin: 0vh 1.2vw;
+    padding-top: 9%;
+    width: 90px;
+}
 #flex-container {
     display: flex;
 }
+
 .contact-link {
     display: flex;
     width: min-content;
     padding-right: 5px;
-    border: 2px, solid, #cfedfd;
+    border: 2px solid #cfedfd;
     transition: border background-color .1s linear .1s;
     overflow: hidden;
 }
@@ -142,6 +158,45 @@ header p {
     align-self: center;
     color:#343d46;
     text-decoration: none;
+}
+/* override for projects page */
+#projects_top #flex-container {
+    justify-content: space-around;
+}
+
+/* tv-shaped border */
+#tv-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tv-frame div {
+    margin: auto 0;
+    border: 2px solid #81b1c9;
+    background-color: #81b1c9;
+    width: 22px;
+    height: 18px;
+}
+#tv-frame div:last-child {
+    border: 2px solid #81b1c9;
+    background-color: #81b1c9;
+    width: 144px;
+    height: 16px;
+}
+/* YouTube video embeds styling */
+.yt-vid-embed {
+    border: 16px inset #74a7c1;
+    border-radius: 2%;
+    margin: 0vh 1vw;
+}
+
+/* figure styling */
+figure {
+    border: 10px 10px 10px 8px solid #74a7c1;
+    border-radius: 2%;
+    margin: 8px;
+    padding: 12px;
+    background-color: #74a7c1;
 }
 
 /* section styling*/
@@ -168,8 +223,8 @@ h1 {
 
 h2 {
     margin: 10px;
-    padding-top: 3px;
-    text-transform: uppercase;
+    padding-top: 4px;
+    padding-bottom: 4px;
     font-weight: bolder;
     font-size: 140%;
 }

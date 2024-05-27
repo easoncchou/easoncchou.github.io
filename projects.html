@@ -27,29 +27,56 @@
 </nav>
 
 <main id="main-content">
-<section id="my_projects">
-    <h2> My Projects </h2>
-    <p> I love to make things using the skills I've learned. Please take a look! </p>
 
-    <section id="rhythm_game">
-        A Rhythm Game similar to <a href="https://en.wikipedia.org/wiki/Piano_Tiles"> Piano Tiles </a> made in the <strong> C </strong> language for the DE1-SoC Board.
-        <ul> 
-            <li> <a href="https://youtu.be/g_SRKAhhgUU?si=3auN8qKLcAuTi8ca"> Video Demo </a> </li>
-            <li> <a href="https://github.com/easoncchou/rhythm_game"> GitHub Link </a> </li>
-        </ul>
-    </section>
+<header id="projects_top">
+    <h1> My Projects</h1>
+    <p> I love to make things using the skills I've learned. Please take a look! You can also jump to a project about each subject below: </p>
+    <div id="flex-container"> 
+        <div class="contact-link" id="first-contact-link">
+            <a class="contact-link-img" href="#embedded-systems-proj"><img id="de1-soc-img" src="assets/images/de1-soc.png" alt="de1-soc board"></a>
+            <a class="contact-link-text" href="#embedded-systems-proj">Embedded Systems</a>
+        </div>
+        <div class="contact-link">
+            <a class="contact-link-img" href="#software-engineering-proj"><img id="swe-img" src="assets/images/swe.png" alt="doodle of engineer in a screen"></a>
+            <a class="contact-link-text" href="#software-engineering-proj">Software Engineering</a>
+        </div>
+        <div class="contact-link">
+            <a class="contact-link-img" href="#web-dev-proj"><img id="web-dev-img" src="assets/images/web-dev.png" alt="computer with '</>'' on it"></a>
+            <a class="contact-link-text" href="#web-dev-proj">Web Development</a>
+        </div>
+    </div>
+</header>
 
-    <section id="stuGIS">
-        A GIS desktop app designed to <em> make student life easier</em>, coded in <strong> C++ </strong> for the <strong> Linux </strong> system.
-        <ul> 
-            <li> <a href="https://github.com/JamesTheZhang/ECE297"> GitHub Link </a> </li>
-        </ul>
-        <figure>
-            <img src="assets/images/stuGIS.png" alt="A screenshot of the stuGIS interface" style="width:703px;height:378px;">
-            <figcaption> A screenshot of the stuGIS interface. </figcaption>
-        </figure>
-    </section>
-</section>   
+<section id="embedded-systems-proj">
+    <h2> Rhythm Game - Piano Tiles on the DE1-SoC </h2>
+    <p> A Rhythm Game similar to <a href="https://en.wikipedia.org/wiki/Piano_Tiles" target="_blank"> Piano Tiles </a> made in the <strong> C </strong> language for the DE1-SoC Board. </p>
+    <div id="tv-frame">
+        <iframe class="yt-vid-embed" width="560" height="315" src="https://www.youtube.com/embed/g_SRKAhhgUU?si=sas2nS5vWf6oPnzy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div></div>
+        <div></div>
+    </div>
+    <p> <a href="https://youtu.be/g_SRKAhhgUU?si=3auN8qKLcAuTi8ca" target="_blank"> Link to Video Demo </a> </p>
+    <p> <a href="https://github.com/easoncchou/rhythm_game"> GitHub Link </a> </p>
+     
+     
+</section>
+
+<section id="software-engineering-proj">
+    <h2> StuGIS - Usable and Responsive Mapping + Navigation </h2>
+    <p> A GIS desktop app designed to <em> make student life easier</em>, coded in <strong> C++ </strong> for the <strong> Linux </strong> system.</p>
+    <figure>
+        <img src="assets/images/stuGIS.png" alt="A screenshot of the stuGIS interface" style="width:703px;height:378px;">
+    </figure>
+    <p><a href="https://github.com/JamesTheZhang/ECE297"> GitHub Link </a></p>
+</section>
+
+<section id="web-dev-proj">
+    <h2> Portfolio Website - About This Very Site </h2>
+    <p> So, this is my web development project. I made this to neatly display my skills and experiences while showing off my web dev skills.
+        I had a ton of fun making this website, and it's sparked my passion for front-end development!
+    </p>
+</section>
+
 </main>
 <footer> Last updated: May 25th, 2024. <a id="back_to_top" href="#top"> Back to top </a> </footer>
 </body>
