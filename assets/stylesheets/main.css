@@ -401,7 +401,12 @@ figcaption {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 0.45s, opacity 0.6s linear;
-    font-size: 75%;
+    font-size: max(1.2vw 1vh);
+}
+@media only screen and (max-width: 1000px) {
+    #hobbies li p {
+        font-size: 78%;
+    }
 }
 #hobbies li:hover div {
     transform: scale(105%);
