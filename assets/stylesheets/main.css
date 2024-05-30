@@ -100,7 +100,15 @@ nav img {
     /* border: 2px solid red; */
     height: 10vh;
 }
-
+@media only screen and (max-width: 600px) {
+    nav a {
+        font-size: 16px;
+        line-height: 150%;
+    }
+    nav img {
+        height: 8.5vh;
+    }
+}
 /* header styling */
 header {
     margin: 0px 0px 0px 0px;
@@ -181,6 +189,17 @@ header p {
     align-self: center;
     color:#343d46;
     text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+    .contact-link {
+        padding-right: 0px;
+    }
+    #flex-container {
+        justify-content: space-evenly;
+    }
+    .contact-link-text {
+        display: none;
+    }
 }
 /* override for projects page */
 #projects_top #flex-container {
@@ -406,6 +425,11 @@ figcaption {
 @media only screen and (max-width: 1000px) {
     #hobbies li p {
         font-size: 78%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #hobbies li p {
+        margin: 10px;
     }
 }
 #hobbies li:hover div {
