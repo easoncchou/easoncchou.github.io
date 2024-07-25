@@ -14,24 +14,6 @@ body {
     color: #343d46;
 }
 
-#hobbies {
-    /* top layer */
-    margin: 0;
-    padding: 0;
-    background-color: #81b1c9;
-    background-image: url("../images/supernova-gold.png");
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
-    background-position: center center;
-    height: 100vh;
-    /* animation */
-    animation-name: space-window-perspective;
-    animation-duration: 200s;
-    animation-delay: 0s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
 .skip-link {
     position: absolute;
     top: -40px;
@@ -44,6 +26,10 @@ body {
 
 .skip-link:focus {
     top: 0;
+}
+
+strong {
+    font-weight: bold;
 }
 
 nav {
@@ -77,6 +63,49 @@ nav a.current {
     text-underline-offset: 5px;
 }
 
+/* responsive design desktop nav */
+@media (min-width: 720px) {
+    nav {
+        margin: 0px 0px 0px 0px;
+        padding: 1rem 1rem;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        width: auto;
+        background-color: #011f4b;
+    }
+
+    nav a {
+        /* border: 2px solid red; */
+        display: inline-block;
+        padding: 5px;
+        border-radius: 5%;
+        margin-top: 2.8%;
+        width: max-content;
+        height: min-content;
+        color: #e0f0f0;
+        text-decoration: none;
+        font-size: 20px;
+        transition: background-color .1s linear .1s;
+    }
+
+    nav a:hover {
+        background-color: #115376;
+    }
+
+    nav a.current {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+    }
+
+    nav img {
+        /* border: 2px solid red; */
+        display: block;
+        width: 10vh;
+    }
+}
+
 main {
     margin: 0;
     padding: 0;
@@ -84,7 +113,7 @@ main {
 
 header {
     margin: 0;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem 1rem 1rem;
     background-color: #bae5fd;
 }
 
@@ -92,17 +121,29 @@ header h1 {
     padding: 0 0 0 0.6rem;
     margin: 0 0 0 1rem;
     border-left: 4px solid #011f4b;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 700;
     text-align: left;
 }
 
 header p {
-    margin: 0.5rem 0;
+    margin: 0.15rem 0 0 0;
     padding: 1rem;
     font-weight: 500;
     font-size: 130%;
     line-height: 120%;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 720px) {
+    #flex-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 .contact-link {
@@ -128,19 +169,172 @@ header img {
 section {
     background-color: #bae5fd;
     margin: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 1rem;
     line-height: 105%;
 }
 
 section h2 {
-    font-weight: 700;
-    font-size: 200%;
-    margin: 1rem 0.5rem;
+    margin: 0.5rem 0.2rem;
+    font-weight: bold;
+    font-size: 140%;
+    line-height: 110%;
 }
 
 section p {
-    margin: 0.5rem;
+    margin: 0.7rem 0.5rem;
     font-size: 120%;
-    line-height: 120%;
+    line-height: 110%;
+}
+
+.yt-vid-embed {
+    margin: 0.2rem 0;
+    width: 100%;
+}
+
+section img {
+    width: 100%;
+}
+
+.space-window-container {
+    margin: 0.5rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.space-window-container figcaption {
+    margin: 0.8rem 1rem;
+    font-size: 90%;
+}
+
+#supernova-gold-window {
+    border-radius: 20px;
+    border: 2px solid #cfedfd;
+    background-image: url("../images/supernova-gold.png");
+    background-position: 25% 25%;
+    background-size: 150%;
+    /* animation */
+    animation-name: space-window-perspective;
+    animation-duration: 100s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* transition */
+    transition: border 1s ease 0.1s, background-size 1s ease 0.1s;
+}
+
+@keyframes space-window-perspective {
+    0% {
+        background-position: 50% 20%;
+    }
+
+    16.7% {
+        background-position: 75% 40%;
+    }
+
+    35.4% {
+        background-position: 75% 60%;
+    }
+
+    53.1% {
+        background-position: 50% 80%;
+    }
+
+    67.7% {
+        background-position: 25% 60%;
+    }
+
+    83.3% {
+        background-position: 25% 40%;
+    }
+
+    100% {
+        background-position: 50% 20%;
+    }
+}
+
+@media (min-width: 720px) {
+    .frame {
+        display: flex;
+        justify-content: center;
+        margin: 0.8rem 0;
+    }
+
+    .yt-vid-embed {
+        width: 70%;
+    }
+
+    section img {
+        width: 70%;
+    }
+
+    #supernova-gold-window:hover {
+        border: 2px solid #002630;
+        background-size: 160%;
+    }
+}
+
+ul {
+    margin: 0.75rem 0.5rem;
+    font-size: 1.25rem;
+    line-height: 100%;
+    font-weight: bold;
+    list-style-type: disc;
+}
+
+li {
+    margin: 0.5rem 0 0.5rem 1.25rem;
+    font-size: 1.2rem;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+#hobbies-header {
+    display: none;
+}
+
+.hobbies-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.hobbies-card {
+    margin: 1rem;
+    border: 0.1rem solid #002630;
+    border-radius: 10px;
+}
+
+#hobbies img {
+    border-radius: 10px;
+}
+
+@media (min-width: 720px) {
+    .hobbies-grid {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-around;
+    }
+
+    .hobbies-card img {
+        width: 100%;
+    }
+}
+
+footer {
+    position: static;
+    /* or position: absolute; */
+    bottom: 0;
+    margin: 0px 0px;
+    padding: 2px;
+    border-style: none;
+    background-color: #74a7c1;
+    line-height: 100%;
+    font-size: 16px;
+}
+
+@media (min-width: 720px) {
+    footer {
+        position: fixed;
+    }
 }
