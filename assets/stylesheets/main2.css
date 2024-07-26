@@ -380,27 +380,28 @@ li {
     background-color: #bae5fd;
 }
 
+.hobbies-card.spin {
+    transform-style: preserve-3d; /* Ensures child elements maintain their 3D */
+    animation: spin 0.7s linear 1;
+}
+@keyframes spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+}
+
 @media (min-width: 720px) {
     .hobbies-grid {
         display: grid;
         grid-template-columns: 30% 30% 30%;
         justify-content: space-around;
     }
-    .hobbies-card.spin {
-        transform-style: preserve-3d; /* Ensures child elements maintain their 3D */
-        animation: spin 0.7s linear 1;
-    }
     .hobbies-card img {
         width: 100%;
     }
-    @keyframes spin {
-        from {
-          transform: rotateY(0deg);
-        }
-        to {
-          transform: rotateY(360deg);
-        }
-      }
 }
 
 footer {
