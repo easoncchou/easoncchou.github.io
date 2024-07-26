@@ -46,14 +46,12 @@ nav img {
 }
 
 nav a {
-    /* border: 2px solid red; */
     padding: 0.7rem 0.5rem 1rem 0.5rem;
     border-radius: 5%;
     color: #c0c0c0;
     text-decoration: none;
     font-size: 20px;
     text-align: center;
-    transition: background-color .1s linear .1s;
 }
 
 nav a.current {
@@ -68,6 +66,7 @@ nav a.current {
     nav {
         margin: 0px 0px 0px 0px;
         padding: 1rem 1rem;
+        height: 5.2rem;
         flex-direction: row;
         justify-content: space-around;
         align-content: center;
@@ -208,10 +207,10 @@ section img {
     font-size: 90%;
 }
 
-#supernova-gold-window {
+#window {
     border-radius: 20px;
     border: 2px solid #cfedfd;
-    background-image: url("../images/supernova-gold.png");
+    background-image: url("../images/starry-sky2.png");
     background-position: 25% 25%;
     background-size: 150%;
     /* animation */
@@ -228,27 +227,21 @@ section img {
     0% {
         background-position: 50% 20%;
     }
-
     16.7% {
         background-position: 75% 40%;
     }
-
     35.4% {
         background-position: 75% 60%;
     }
-
     53.1% {
         background-position: 50% 80%;
     }
-
     67.7% {
         background-position: 25% 60%;
     }
-
     83.3% {
         background-position: 25% 40%;
     }
-
     100% {
         background-position: 50% 20%;
     }
@@ -269,7 +262,7 @@ section img {
         width: 70%;
     }
 
-    #supernova-gold-window:hover {
+    #window:hover {
         border: 2px solid #002630;
         background-size: 160%;
     }
@@ -290,8 +283,37 @@ li {
     font-weight: 400;
 }
 
+#hobbies {
+    background-image: none;
+    margin: 0;
+    padding: 0;
+    background-color: #81b1c9;
+    background-image: url("../images/starry-sky2.png");
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center center;
+    /* animation */
+    animation-name: hobbies-animation;
+    animation-duration: 60s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hobbies-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
 #hobbies-header {
     display: none;
+}
+
+#hobbies-container {
+    background-color: rgb(0,0,0,0);
 }
 
 .hobbies-grid {
@@ -300,13 +322,10 @@ li {
 }
 
 .hobbies-card {
-    margin: 1rem;
-    border: 0.1rem solid #002630;
+    margin: 0.7rem;
+    border: 1rem solid #313178;
     border-radius: 10px;
-}
-
-#hobbies img {
-    border-radius: 10px;
+    background-color: #bae5fd;
 }
 
 @media (min-width: 720px) {
@@ -336,5 +355,16 @@ footer {
 @media (min-width: 720px) {
     footer {
         position: fixed;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        background-image: none;
+        background-color: #011f4b;
+    }
+    #hobbies {
+        background-image: none;
+        background-color: #74a7c1;
     }
 }
