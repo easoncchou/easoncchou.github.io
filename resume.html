@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/stylesheets/main2.css">
     <!-- get google fonts (roboto) -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src = "script.js"></script>
 </head>
 
 <body>
@@ -18,11 +19,15 @@
 <a href="#main-content" class="skip-link">Skip to main content</a>
 <!-- navigation using the nav semantic tag -->
 <nav id="table_of_contents">
-    <img src="assets/images/explorer-sprite.png" alt="explorer river sprite"> 
-    <a href="index.html"> About Me </a>
-    <a href="projects.html"> My Projects </a>
-    <a class="current" href="resume.html"> Skills &amp; Experiences </a>
-    <a href="hobbies.html"> Hobbies &amp; Interests </a>
+    <!-- hamburger menu button -->
+    <button class="hamburger-menu-button" onclick="toggleNav()">
+        <img class="hamburger-menu-icon" src="assets/images/hamburger-menu.png"></img>
+    </button>
+    <img src="assets/images/ufo-sprite.png" alt="river-sprite in a ufo">
+    <a class="not-current" href="index.html"> About Me </a>
+    <a class="not-current" href="projects.html"> My Projects </a>
+    <a class="current" href="javascript:void(0);"> Skills &amp; Experiences </a>
+    <a class="not-current" href="hobbies.html"> Hobbies &amp; Interests </a>
 </nav>
 
 <main id="main-content">
@@ -55,5 +60,5 @@
     </ul>
 </section>
 </main>
-<footer> Last updated: May 25th, 2024. <a id="back_to_top" href="#top"> Back to top </a> </footer>
+<footer> Last updated: Jul 25th, 2024. <a id="back_to_top" href="#top"> Back to top </a> </footer>
 </body>

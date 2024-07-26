@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/stylesheets/main2.css">
     <!-- get google fonts (roboto) -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src = "script.js"></script>
 </head>
 
 <body>
@@ -18,11 +19,15 @@
 <a href="#main-content" class="skip-link">Skip to main content</a>
 <!-- navigation using the nav semantic tag -->
 <nav id="table_of_contents">
-    <img src="assets/images/arcane-sprite.png" alt="arcane sprite sparkling with energy"> 
-    <a href="index.html"> About Me </a>
-    <a class="current" href="projects.html"> My Projects </a>
-    <a href="resume.html"> Skills &amp; Experiences </a>
-    <a href="hobbies.html"> Hobbies &amp; Interests </a>
+    <!-- hamburger menu button -->
+    <button class="hamburger-menu-button" onclick="toggleNav()">
+        <img class="hamburger-menu-icon" src="assets/images/hamburger-menu.png"></img>
+    </button>
+    <img src="assets/images/ufo-sprite.png" alt="river-sprite in a ufo">
+    <a class="not-current" href="index.html"> About Me </a>
+    <a class="current" href="javascript:void(0);"> My Projects </a>
+    <a class="not-current" href="resume.html"> Skills &amp; Experiences </a>
+    <a class="not-current" href="hobbies.html"> Hobbies &amp; Interests </a>
 </nav>
 
 <main id="main-content">
@@ -49,11 +54,8 @@
 <section id="embedded-systems-proj" class="neon-border">
     <h2> Rhythm Game - Piano Tiles on the DE1-SoC </h2>
     <p> A Rhythm Game similar to <a href="https://en.wikipedia.org/wiki/Piano_Tiles" target="_blank">Piano Tiles</a> made in the <strong> C </strong> language for the DE1-SoC Board. </p>
-    <div class="frame">
-        <iframe class="yt-vid-embed" width="560" height="315" src="https://www.youtube.com/embed/g_SRKAhhgUU?si=sas2nS5vWf6oPnzy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <p> Wrote real-time embedded systems code with strict timing constraints, where time complexity and efficiency was required for functionality. 
-        Designed multiple parallel modules for audio output, game events, and integrated them with peripheral input signals.
+    <p> Wrote low-level procedural code with strict timing constraints, where time complexity and efficiency was required for functionality. 
+        Designed multiple real-time parallel modules for audio output, game events, and integrated them with peripheral input signals.
     </p>
     <p> <a href="https://youtu.be/g_SRKAhhgUU?si=3auN8qKLcAuTi8ca" target="_blank"> Link to Video Demo </a> </p>
     <p> <a href="https://github.com/easoncchou/rhythm_game" target="_blank"> GitHub Link </a> </p>

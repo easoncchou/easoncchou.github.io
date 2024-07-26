@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/stylesheets/main2.css">
     <!-- get google fonts (roboto) -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src = "script.js"></script>
 </head>
 
 
@@ -20,11 +21,15 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- navigation using the nav semantic tag -->
     <nav id="table_of_contents">
+        <!-- hamburger menu button -->
+        <button class="hamburger-menu-button" onclick="toggleNav()">
+            <img class="hamburger-menu-icon" src="assets/images/hamburger-menu.png"></img>
+        </button>
         <img src="assets/images/ufo-sprite.png" alt="river-sprite in a ufo">
-        <a href="index.html"> About Me </a>
-        <a href="projects.html"> My Projects </a>
-        <a href="resume.html"> Skills &amp; Experiences </a>
-        <a class="current" href="hobbies.html"> Hobbies &amp; Interests </a>
+        <a class="not-current" href="index.html"> About Me </a>
+        <a class="not-current" href="projects.html"> My Projects </a>
+        <a class="not-current" href="resume.html"> Skills &amp; Experiences </a>
+        <a class="current" href="javascript:void(0);"> Hobbies &amp; Interests </a>
     </nav>
 
     <header id="hobbies-header">
@@ -34,34 +39,34 @@
     <main id="main-content">
         <section id="hobbies-container">
             <div class="hobbies-grid">
-                <div class="hobbies-card">
+                <div class="hobbies-card" onclick=spinCard(this)>
                     <img src="/assets//images/snoopy2.png" alt="snoopy off to play badminton">
                     <p>I play lots of badminton. I got bronze at the provincials!</p>
                     <p>It taught me to persevere and helped me make lots of friends.</p>
                 </div>
 
-                <div class="hobbies-card">
+                <div class="hobbies-card" onclick=spinCard(this)>
                     <img src="/assets/images/cat-workout.png" alt="cat lifting weights">
                     <p>I enjoy working out weekly for both my physical and mental health.</p>
                 </div>
 
-                <div class="hobbies-card">
+                <div class="hobbies-card" onclick=spinCard(this)>
                     <img src="/assets/images/hanuman.png" alt="bronze statue of hanuman in muay thai pose">
                     <p>I love martial arts! I've done Muay Thai, Boxing, and Sanda.</p>
                 </div>
 
-                <div class="hobbies-card">
+                <div class="hobbies-card" onclick=spinCard(this)>
                     <img src="/assets/images/pompompurin.png" alt="pompompurin playing guitar">
                     <p>I play clarinet and guitar! I also love listening to many genres of music including J-pop and
                         R&amp;B.</p>
                 </div>
 
-                <div class="hobbies-card">
+                <div class="hobbies-card" onclick=spinCard(this)>
                     <img src="/assets/images/snoopy4.png" alt="snoopy cooking">
                     <p>I learned how to cook after moving out; its fun and saves money!</p>
                 </div>
 
-                <div class="hobbies-card">
+                <div class="hobbies-card" onclick=spinCard(this)>
                     <img src="/assets/images/xiaohei1.png" alt="xiaohei, my grandma's mutt">
                     <p>I love dogs. This website is dedicated to my grandma's dog Xiaohei.</p>
                 </div>
