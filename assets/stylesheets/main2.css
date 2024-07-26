@@ -34,7 +34,7 @@ strong {
 
 nav {
     margin: 0px 0px 0px 0px;
-    padding: 0.5rem 0.5rem;
+    padding: 0.6rem 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,7 +79,6 @@ nav a.not-current {
 }
 
 nav a.not-current-visible {
-    /* border: 2px solid red; */
     display: inline-block;
     padding: 0.7rem 0.5rem 0.7rem 0.5rem;
     max-height: 1.2rem;
@@ -149,6 +148,7 @@ nav a.current {
     }
     nav img {
         /* border: 2px solid red; */
+        width: 5rem;
         display: block;
     }
 }
