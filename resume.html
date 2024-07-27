@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,54 +12,61 @@
     <link rel="stylesheet" href="assets/stylesheets/main2.css">
     <!-- get google fonts (roboto) -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src = "script.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
-<!-- accessibility skipper -->
-<a href="#main-content" class="skip-link">Skip to main content</a>
-<!-- navigation using the nav semantic tag -->
-<nav id="table_of_contents">
-    <!-- hamburger menu button -->
-    <button class="hamburger-menu-button" onclick="toggleNav()">
-        <img class="hamburger-menu-icon" src="assets/images/hamburger-menu.png"></img>
-    </button>
-    <img src="assets/images/explorer-sprite.png" alt="explorer sprite">
-    <a class="not-current" href="index.html"> About Me </a>
-    <a class="not-current" href="projects.html"> My Projects </a>
-    <a class="current" href="javascript:void(0);"> Skills &amp; Experiences </a>
-    <a class="not-current" href="hobbies.html"> Hobbies &amp; Interests </a>
-</nav>
+    <!-- accessibility skipper -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- navigation using the nav semantic tag -->
+    <nav id="table_of_contents">
+        <!-- hamburger menu button -->
+        <button class="hamburger-menu-button" onclick="toggleNav()">
+            <img class="hamburger-menu-icon" src="assets/images/hamburger-menu.png"></img>
+        </button>
+        <img src="assets/images/explorer-sprite.png" alt="explorer sprite">
+        <a class="not-current" href="index.html"> About Me </a>
+        <a class="not-current" href="projects.html"> My Projects </a>
+        <a class="current" href="javascript:void(0);"> Skills &amp; Experiences </a>
+        <a class="not-current" href="hobbies.html"> Hobbies &amp; Interests </a>
+    </nav>
 
-<main id="main-content">
-<header id="top">
-    <h1> Skills &amp; Experiences </h1>
-    <p> These are the tools I have under my belt right now.</p>
-</header>
-<section id="skills">
-    <h2> Skills </h2>
-    <p><strong>Programming Languages:</strong> C/C++, Python, HTML/CSS, JavaScript, Verilog, MATLAB, Bash</p>
-    <p><strong>Technical Skills:</strong> React, PyTorch, GTK/Glade, Git/GitHub, Data Structures & Algorithms, Figma</p>
-</section>
+    <header id="top">
+        <h1> Skills &amp; Experiences </h1>
+        <p> These are the tools I have under my belt right now.</p>
+    </header>
+    
+    <main id="main-content">
+        <section id="skills">
+            <h2> Skills </h2>
+            <p><strong>Programming Languages:</strong> C/C++, Python, HTML/CSS, JavaScript, Verilog, MATLAB, Bash</p>
+            <p><strong>Technical Skills:</strong> React, PyTorch, GTK/Glade, Git/GitHub, Data Structures & Algorithms,
+                Figma</p>
+        </section>
 
-<section id="experiences">
-    <h2> Experiences </h2>
-    <ul><abbr title="University of Toronto Robotics Association">UTRA</abbr> <a href="https://www.utra.ca/teams/pacbot/" target="_blank">PacBot</a> Algo Team Member<br>(Oct 2023 - Apr 2024)
-        <li>Conducted research and wrote reports about game internals and potential strategies</li>
-        <li>Debugged A* pathfinding heuristics across large codebase</li>
-        <li>Implemented and tested features for A* targeting</li>
-    </ul> 
-    <ul>Tutor at <a href="https://www.drjennychan.com/" target="_blank">Success For All Canada</a><br>(2024 - Present)
-        <li>Used visual examples and analogies to clearly explain concepts</li>
-        <li>One-on-one teaching using probing questions to guide students</li>
-    </ul>
-    <ul><abbr title="Steveston-London Secondary School"> SLSS </abbr> Badminton Team Captain<br>(2018 - 2022)
-        <li>Mediated arguments and conflicts between teammates</li>
-        <li>Organized and led team practices</li>
-        <li>Coached team members to improve their techniques, mechanics, and strategies</li>
-            
-    </ul>
-</section>
-</main>
-<footer> Last updated: Jul 25th, 2024. <a id="back_to_top" href="#top"> Back to top </a> </footer>
+        <section id="experiences">
+            <h2> Experiences </h2>
+            <ul><abbr title="University of Toronto Robotics Association">UTRA</abbr> <a
+                    href="https://www.utra.ca/teams/pacbot/" target="_blank">PacBot</a> Algo Team Member<br>(Oct 2023 -
+                Apr 2024)
+                <li>Conducted research and wrote reports about game internals and potential strategies</li>
+                <li>Debugged A* pathfinding heuristics across large codebase</li>
+                <li>Implemented and tested features for A* targeting</li>
+            </ul>
+            <ul>Tutor at <a href="https://www.drjennychan.com/" target="_blank">Success For All Canada</a><br>(2024 -
+                Present)
+                <li>Used visual examples and analogies to clearly explain concepts</li>
+                <li>One-on-one teaching using probing questions to guide students</li>
+            </ul>
+            <ul><abbr title="Steveston-London Secondary School"> SLSS </abbr> Badminton Team Captain<br>(2018 - 2022)
+                <li>Mediated arguments and conflicts between teammates</li>
+                <li>Organized and led team practices</li>
+                <li>Coached team members to improve their techniques, mechanics, and strategies</li>
+
+            </ul>
+        </section>
+        <!-- blank line for spacing between footer and last section -->
+        <div> &nbsp; </div>
+    </main>
+    <footer> Last updated: Jul 25th, 2024. <a id="back_to_top" href="#table_of_contents"> Back to top </a> </footer>
 </body>

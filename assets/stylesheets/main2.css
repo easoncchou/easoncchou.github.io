@@ -160,6 +160,7 @@ main {
 
 header {
     margin: 0;
+    width: auto;
     padding: 1.5rem 1rem 1rem 1rem;
     background-color: #bae5fd;
 }
@@ -232,11 +233,6 @@ section p {
     margin: 0.7rem 0.5rem;
     font-size: 120%;
     line-height: 110%;
-}
-
-.yt-vid-embed {
-    margin: 0.2rem 0;
-    width: 100%;
 }
 
 section img {
@@ -425,7 +421,6 @@ footer {
 @media (min-width: 720px) {
     footer {
         position: fixed;
-    }
 }
 
 @media (min-width: 1440px) {
